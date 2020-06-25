@@ -1,5 +1,5 @@
 #/bin/sh
-umount -R /mnt
+umount -lR /mnt
 # самый жирный раздел
 disk=$(lsblk -lps -x FSSIZE | awk '{print $1}' | sed -n '2p'| head -1)
 echo $disk
