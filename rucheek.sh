@@ -10,7 +10,7 @@ mount /sys  --bind /mnt/sys
 #находим пипишник
 if [ -f /mnt/etc/sysconfig/network-scripts/ifcfg-eth0 ] 
 then
-	address=$(cat /etc/sysconfig/network-scripts/ifcfg-eth0 | grep IPADDR | awk -F '"' '{print $2}' | head -1)
+	address=$(cat /mnt/etc/sysconfig/network-scripts/ifcfg-eth0 | grep IPADDR | awk -F '=' '{print $2}' | head -1)
 else
 	address=$(cat /mnt/etc/network/interfaces | grep address | awk -F ' ' '{print $2}')
 fi
