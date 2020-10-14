@@ -12,6 +12,7 @@ ssh-keygen -q -f id_banana -N ''
 /var/lib/docker/
 /var/lib/mysql/
 /etc/sysconfig/network-scripts/
+/etc/network
 /var/www/*/data/tmp/
 /var/www/*/data/mod-tmp/
 /lib/modules/
