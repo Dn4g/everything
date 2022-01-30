@@ -38,7 +38,7 @@ os.system("ipmitool lan set 1 defgw ipaddr "+ str(ipmi_gw ))
 
 print ("\nAll nastroyki done.\n Just podojdi odna minuta when it zapinjetsya")
 
-ipmi_ping=os.system("ping -c 1 -w 60" + str(ipmi_ip))
+ipmi_ping=os.system("ping -c 1 -w 60 " + str(ipmi_ip))
 
 if ipmi_ping==0:
     print ("\neverything is done, you prekrasen")
