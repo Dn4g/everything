@@ -23,12 +23,17 @@ print("\ntype /30 netmask IPMI: ")
 ipmi_source=input()
 ipmi_source=ipmi_source.strip()
 ipmi_source=format(ipaddress.IPv4Address(ipmi_source))
-print(ipmi_source)
+
 
 ipmi_ip=ipaddress.IPv4Address(ipmi_source) + 2
 ipmi_gw=ipaddress.IPv4Address(ipmi_source) + 1
-print (ipmi_gw)
-print(ipmi_ip)
+
+print(\n"if vse norm:")
+print(\n"network: " + ipmi_source + "/30")
+print (\n"GW: " + ipmi_gw)
+print(\n"IP: " + ipmi_ip)
+print(\n"please najmi jubya button then here we go")
+input()
 
 os.system("ipmitool lan set 1 ipaddr "+ str(ipmi_ip))
 os.system("ipmitool lan set 1 netmask 255.255.255.252")
