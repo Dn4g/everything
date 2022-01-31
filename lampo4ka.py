@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# Hello. I est Lampo4ka Del Ray. I ni4ego ne umeu delat, only set IPMI at XxX. Zamechana or predlojenia @dn4gg
+
 import ipaddress
 import os
 
