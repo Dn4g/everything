@@ -5,7 +5,7 @@ import os
 
 #проверка наличия IPMITOOL
 
-ipmitool=os.system("ipmitool sdr")
+ipmitool=os.system("ipmitool chassis selftest")
 
 if ipmitool == 0:
     print ("\nipmitool ustanovlen")
