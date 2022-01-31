@@ -4,7 +4,7 @@ import ipaddress
 import os
 
 #проверка наличия IPMITOOL
-print("\n Where is my IPMI?")
+
 ipmitool=os.system("ipmitool chassis selftest")
 
 if ipmitool == 0:
