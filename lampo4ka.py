@@ -49,3 +49,7 @@ if ipmi_ping==0:
     print ("\neverything is done, you prekrasen")
 else:
     print ("\nshoto-to going wrong, try Cold Reset or what do you hochesh")
+    
+print("\nty could set new IPMI srazy v DCI, but smeni ID na pravilny:
+      \n /usr/local/mgr5/sbin/mgrctl -m dcimgr server.connection elid=ID su=admin
+      \n /usr/local/mgr5/sbin/mgrctl -m dcimgr server.connection.edit elid=6188 plid=ID" + ip=str(ipmi_ip)) + "sok=ok su=admin")
