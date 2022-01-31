@@ -16,7 +16,7 @@ else:
     if my_os == 0:
         os.system("apt update && apt install -y ipmitool")
     else:
-        os.system("yum install ipmitool")
+        os.system("yum -y install ipmitool")
     
 
 print("\ntype /30 (Tolko IP!) IPMI: ")
