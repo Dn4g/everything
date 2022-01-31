@@ -19,7 +19,7 @@ else:
         os.system("yum install ipmitool")
     
 
-print("\ntype /30 netmask IPMI: ")
+print("\ntype /30 (Tolko IP!) IPMI: ")
 ipmi_source=input()
 ipmi_source=ipmi_source.strip()
 ipmi_source=format(ipaddress.IPv4Address(ipmi_source))
