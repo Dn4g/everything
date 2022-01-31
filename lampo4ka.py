@@ -29,10 +29,10 @@ ipmi_ip=ipaddress.IPv4Address(ipmi_source) + 2
 ipmi_gw=ipaddress.IPv4Address(ipmi_source) + 1
 
 print(\n"if vse norm:")
-print(\n"network: " + ipmi_source + "/30")
-print (\n"GW: " + ipmi_gw)
-print(\n"IP: " + ipmi_ip)
-print(\n"please najmi jubya button then here we go")
+print("\nnetwork: " + ipmi_source + "/30")
+print ("\nGW: " + str(ipmi_gw))
+print("\nIP: " + str(ipmi_ip))
+print("\nplease najmi jubya button then here we go")
 input()
 
 os.system("ipmitool lan set 1 ipaddr "+ str(ipmi_ip))
