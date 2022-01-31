@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import ipaddress
 import os
@@ -12,9 +12,9 @@ if ipmitool == 0:
 else:
 # Проверка ОС
     print ("\nipmitool do not ustanovlen.")
-    my_os = os.system("apt")
+    my_os = os.system("apt -v")
     if my_os == 0:
-        os.system("apt update & apt install ipmitool")
+        os.system("apt update && apt install -y ipmitool")
     else:
         os.system("yum install ipmitool")
     
@@ -28,8 +28,8 @@ ipmi_source=format(ipaddress.IPv4Address(ipmi_source))
 ipmi_ip=ipaddress.IPv4Address(ipmi_source) + 2
 ipmi_gw=ipaddress.IPv4Address(ipmi_source) + 1
 
-print(\n"if vse norm:")
-print("\nnetwork: " + ipmi_source + "/30")
+print("\nif vse norm:")
+print ("\nnetwork: " + ipmi_source + "/30")
 print ("\nGW: " + str(ipmi_gw))
 print("\nIP: " + str(ipmi_ip))
 print("\nplease najmi jubya button then here we go")
