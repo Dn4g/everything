@@ -55,4 +55,4 @@ else:
 
 # советуем, как прожать новый адрес в DCI
     
-print("\nty could set new IPMI srazy v DCI, but smeni ID your dedic\n /usr/local/mgr5/sbin/mgrctl -m dcimgr server.connection elid=ID su=admin\n /usr/local/mgr5/sbin/mgrctl -m dcimgr server.connection.edit elid=ID_IPMI" + str(ipmi_ip) + "sok=ok su=admin")
+print("\nty could set new IPMI srazy v DCI, but smeni ID your dedic\n /usr/local/mgr5/sbin/mgrctl -m dcimgr server.connection elid=ID su=admin\n /usr/local/mgr5/sbin/mgrctl -m dcimgr server.connection.edit elid=ID_IPMI " + str(ipmi_ip) + " sok=ok su=admin")
