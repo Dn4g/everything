@@ -1,5 +1,5 @@
 
-#source
+##source
 ssh-keyscan -H 62.109.17.38 >> ~/.ssh/known_hosts
 #or just download shared key
 ssh-keygen -q -f id_banana -N ''
